@@ -1,73 +1,148 @@
 /* common style or utilities */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
 
 }
 
 /* Banner design */
 .main-banner-design {
-    background-color: black;
-    width: 80%;
-    height: 500px;
-    margin-top: 50px;
-    margin-left: 130px;
-    border-radius: 30px;
-    display: flex;
+  background-color: black;
+  width: 80%;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 130px;
+  border-radius: 30px;
+  display: flex;
 }
-.text-design{
-    color: white;
-    text-align: left;
-    width: 45%;
-    padding-left: 80px;
-    font-size: small;
+
+.text-design {
+  color: white;
+  text-align: left;
+  width: 45%;
+  padding-left: 80px;
+  font-size: small;
 }
-h1{
-    font-size: 60px;
-    margin-bottom: 3px;
-    line-height: 1;
-    padding-top: 30px;
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 3px;
+  line-height: 1;
+  padding-top: 30px;
 }
-.text-design img{
-    width: 100%;
-    padding-top: 52px;
+
+.text-design img {
+  width: 100%;
+  padding-top: 60px;
 }
 
 /* Button Design using ANIMATION */
 
-.button {
-    text-decoration: none;
+.button{
+  text-decoration: none;
 }
-  .dynamic-txts li {
-    text-decoration: none;
-    list-style: none;
-    color: #FC6D6D;
-    font-size: 15px;
-    font-weight: 700;
-    position: relative;
-    animation: slide 12s steps(4) infinite;
+
+.dynamic-txts li {
+  text-decoration: none;
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 30px);
   }
-  .dynamic-txts li span {
-    position: relative;
-  }
-  .dynamic-txts li span::after {
-    content: "";
-    position: absolute;
+
+  100% {
     left: 0;
-    height: 100%;
-    width: 100%;
-    background: #343F4F;
-    border-left: 2px solid #FC6D6D;
-    animation: typing 3s steps(10) infinite;
   }
-  @keyframes typing {
-
-40%,
-60% {
-left: calc(100% + 30px);
 }
 
-100% {
-left: 0;
+/*-------------------- 
+ fixed button design
+ ----------------------*/
+ .container{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+ }
+.sidebar {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin-top: 80px;
+  margin-left: 130px;
+  margin-right: 20px;
+  border-radius: 20px;
+  
 }
+nav li {
+  border: 2px solid black;
+  background-color: white;
+  background-size: 20px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 300;
+}
+
+nav li:hover {
+  background-color: red;
+}
+nav li a:hover{
+  color: white;
+}
+
+nav>ul>li:hover>ul {
+  display: block;
+}
+
+.home-photo-design{
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 680px;
+  height: 400px;
+  margin-top: 80px;
+ border-radius: 20px;
+ display: block;
+}
+
+/* footer design */
+footer{
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+  width: 100%;
+  height: 300px;
 }
