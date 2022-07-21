@@ -281,3 +281,16 @@ span {
   display: flex;
 
 }
+
+/* media querys */
+/* For tablet */
+@media only screen and (mix-width:768px) and (max-width:1023px){
+.sidebar{}
+}
+/* For mobile */
+@media only screen and (max-width:767px){
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+}
