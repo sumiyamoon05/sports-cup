@@ -1,0 +1,296 @@
+/* common style or utilities */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+
+}
+
+/* Banner design */
+.main-banner-design {
+  background-color: black;
+  width: 80%;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 130px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.text-design {
+  color: white;
+  text-align: left;
+  width: 45%;
+  padding-left: 80px;
+  font-size: small;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 3px;
+  line-height: 1;
+  padding-top: 30px;
+}
+
+.text-design img {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.home-photo-design {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 680px;
+  height: 400px;
+  margin-top: 80px;
+  display: block;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+#fifa {
+  font-size: 40px;
+  text-align: center;
+}
+
+#win-board {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+/* Button Design using ANIMATION */
+
+#link {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  background-color: red;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.dynamic-txts li {
+  text-decoration: none;
+  list-style: none;
+  color: #FC6D6D;
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+  animation: slide 12s steps(4) infinite;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #343F4F;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(10) infinite;
+}
+
+@keyframes typing {
+
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+/*-------------------- 
+ fixed button design
+ ----------------------*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.sidebar {
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  margin-top: 80px;
+  margin-left: 130px;
+  margin-right: 20px;
+  border-radius: 10px;
+
+}
+
+nav li {
+  border: 2px solid black;
+  background-color: white;
+  background-size: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: 300;
+}
+
+nav li:hover {
+  background-color: red;
+}
+
+nav li a:hover {
+  color: white;
+}
+
+nav>ul>li:hover>ul {
+  display: block;
+}
+
+
+
+/* footer design */
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: medium;
+  margin-top: 80px;
+  width: 100%;
+  height: 444px;
+}
+
+#design-footer {
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 130px;
+  margin-bottom: 50px;
+
+
+}
+
+#border {
+  border: 0.5px solid gray;
+  margin-left: 130px;
+  margin-right: 130px;
+  margin-bottom: 30px;
+}
+
+#downpart {
+  padding: 10px;
+}
+
+/* Blog website design */
+
+.blog-bg-design {
+  background-color: white;
+  margin-top: 80px;
+
+}
+
+.blog-bg-design img {
+  width: 210px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  width: 200px;
+  font-size: medium;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.button {
+  text-decoration: none;
+}
+
+span {
+  color: #343f4fb9;
+}
+
+.fa-clock {
+  color: #343f4fb9;
+}
+
+.fa-message {
+  color: #343f4fb9;
+}
+
+.blog-link {
+  color: black;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+}
+
+/* match website design */
+.match-bg-design {
+  margin-top: 80px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding-top: 50px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+
+}
+
+.match-bg-design img {
+  width: 70px;
+  height: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.box-sizing {
+  width: 180px;
+  height: 100px;
+  padding-left: 10px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+}
+
+#match-name {
+  text-align: center;
+  position: absolute;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.match {
+  display: flex;
+
+}
+
+/* media querys */
+/* For tablet */
+@media only screen and (mix-width:768px) and (max-width:1023px){
+.sidebar{}
+}
+/* For mobile */
+@media only screen and (max-width:767px){
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+}
