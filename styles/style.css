@@ -219,6 +219,7 @@ h3 {
 
 .button {
   text-decoration: none;
+  width: fit-content;
 }
 
 span {
